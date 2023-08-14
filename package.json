@@ -1,0 +1,43 @@
+{
+  "name": "compression-loop",
+  "description": "Optimally compress image to a particular size.",
+  "version": "0.1.0",
+  "main": "dist/compression-loop.common.js",
+  "module": "dist/compression-loop.esm.js",
+  "browser": "dist/compression-loop.js",
+  "types": "dist/types/index.d.ts",
+  "repository": "neilveil/compression-loop",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "rollup --config --watch",
+    "rollup": "rollup --config",
+    "pretty": "prettier --write ./src/**/*.{js,ts}",
+    "lint": "eslint ./src/*"
+  },
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
+    "eslint": "^8.47.0",
+    "globals": "^13.21.0",
+    "prettier": "^3.0.1",
+    "rollup": "^3.26.3",
+    "tslib": "^2.6.1"
+  },
+  "keywords": [
+    "browser",
+    "compress",
+    "compression",
+    "compression-loop",
+    "compression-loop.js",
+    "front-end",
+    "image",
+    "image-compressor",
+    "javascript",
+    "lossy-compression",
+    "web"
+  ]
+}
