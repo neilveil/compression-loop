@@ -39,7 +39,7 @@ const main = ({ img, maxSize = 2073600, quality = 1, descentIndex = 0.1, onProgr
 
     if (onProgress) {
       const progress = parseInt(Math.min(100 - Math.max(((result.size - maxSize) / result.size) * 100), 100).toString())
-      onProgress({ progress, quality })
+      onProgress({ progress, quality: Math.round(quality * 100) / 100 })
     }
 
     if (result.size > img.size) return resolve(img)

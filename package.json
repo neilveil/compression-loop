@@ -1,7 +1,7 @@
 {
   "name": "compression-loop",
   "description": "Optimally compress image to a particular size.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/compression-loop.common.js",
   "module": "dist/compression-loop.esm.js",
   "browser": "dist/compression-loop.js",
