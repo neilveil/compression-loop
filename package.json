@@ -10,7 +10,6 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "start": "rollup --config --watch",
     "rollup": "rollup --config",
     "pretty": "prettier --write ./src/**/*.{js,ts}",
     "lint": "eslint ./src/*"
