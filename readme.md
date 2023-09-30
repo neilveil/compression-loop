@@ -8,7 +8,7 @@ Compression Loop allows you to optimally compress images in the browser to the t
 
 The **Quality Descent Algorithm** is utilized in the package which finds the optimal quality index to compress the image to the target size.
 
-<img src="docs/quality-descent.jpg" alt="Quality Descent Algorithm by neilveil" style="max-width: 400px;" />
+<img src="https://github.com/neilveil/compression-loop/assets/29909602/413ea75a-136e-4721-b0b6-3b12161b408a" alt="Quality Descent Algorithm by neilveil" style="max-width: 400px;" />
 
 ## Features 🌟
 
