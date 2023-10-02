@@ -71,8 +71,8 @@ const main = ({
       }
 
       if (onProgress) {
-        const progress = parseInt(
-          Math.min(100 - Math.max(((result.size - maxSize) / result.size) * 100), 100).toString()
+        const progress = parseFloat(
+          Math.min(100 - (Math.abs(maxSize - result.size) / Math.abs(maxSize - img.size)) * 100, 100).toFixed(2)
         )
 
         const stopped = onProgress({ progress, quality: parseFloat(quality.toFixed(10)), img: result })
