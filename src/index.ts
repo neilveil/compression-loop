@@ -19,7 +19,7 @@ const Compressor = (img: Blob, quality: number) =>
     imgEl.onerror = error => reject(error)
   })
 
-interface args {
+export interface CompressionLoopArgs {
   img: Blob
   maxSize: number
   quality?: number
@@ -29,7 +29,7 @@ interface args {
   timeout?: number // In seconds
 }
 
-type result = {
+export type CompressionLoopResult = {
   status:
     | 'success'
     | 'compression-error'
@@ -49,8 +49,8 @@ const main = ({
   onProgress = () => false,
   maxIterations,
   timeout
-}: args) =>
-  new Promise<result>(async resolve => {
+}: CompressionLoopArgs) =>
+  new Promise<CompressionLoopResult>(async resolve => {
     maxIterations = maxIterations || Number.MAX_SAFE_INTEGER
     timeout = (timeout || Number.MAX_SAFE_INTEGER / 1000) * 1000
 
