@@ -32,10 +32,10 @@ export interface CompressionLoopArgs {
 export type CompressionLoopResult = {
   status:
     | 'success'
-    | 'compression-error'
     | 'already-compressed'
-    | 'stopped'
     | 'max-compression-reached'
+    | 'compression-error'
+    | 'stopped'
     | 'time-out'
     | 'max-iterations-exceeded'
   compressedImg?: Blob
